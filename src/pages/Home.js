@@ -4,6 +4,8 @@ import Footer from '../components/footer/footer';
 import Icons from '../components/Icons/Icons';
 
 function Home () {
+
+
     return (
   
       <div className="container2">
@@ -18,9 +20,9 @@ function Home () {
             <Movy />
             <Icons />
             </div>
-            <div className="movies">
-              <h4>My List</h4>
-            </div>
+        <div className="movies">
+          <h4>My List</h4>
+        </div>
             <Footer />
         </div>
       )
