@@ -163,6 +163,7 @@
             font-weight: bold;
             font-size: 12px;
             line-height: 14px;
+
     }
 
     @media (min-width: 640px) {
@@ -255,7 +256,7 @@
         align-self: center;
         background-color: #3177FF;
         color: white;
-        width: 195px;
+        width: px;
         height: 30px;
         margin-top: 40px;
         border-radius: 5px;
@@ -488,13 +489,22 @@
         display:grid;
         grid-template-columns: 1fr;
         grid-template-rows: 2fr 2fr 2fr 1fr;
-        grid-template-areas:"mainfoto"
+        grid-template-areas:"mainfoto3"
                             "onemore"
                             "devices"
-                            "footer";
+                            "footer"                          
     }
     
-    
+    .mainfoto3{
+        grid-area: mainfoto3;
+        display: flex;
+        justify-content: flex-end;
+        background-image: url('./friki.jpg');
+        background-position:center;
+        background-size: cover;
+        width: 100%;
+    }
+
     
     
     .onemore{
@@ -553,13 +563,13 @@
                 font-family: "Roboto";
         }
     
-    .login{
-            align-self: flex-end;
+        .buttonlog2{
+            align-self: flex-start;
             background-color: #3177FF;
             color: white;
-            width: 84px;
+            width: px;
             height: 30px;
-            margin: 10px 10px 0 0;
+            margin-top: 40px;
             border-radius: 5px;
             font-weight: 400;
             font-family: "Roboto" , sans-serif;
@@ -579,7 +589,8 @@
       color:white;  
     }
     
-    .mobile i{
+    .MobileIcon{
+        align-self: center;
         margin-left: 40px;
     }
 

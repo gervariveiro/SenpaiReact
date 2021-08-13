@@ -1,14 +1,15 @@
 import React from 'react';
-import ButtonLogin from '../components/buttons/buttonlogin';
 import Footer from '../components/footer/footer';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faDesktop, faMobile, faGamepad, faTv} from '@fortawesome/free-solid-svg-icons';
 
 function Info () {
 
   return (
 
   <div className="containerInfo">
-        <div className= "mainfoto">
-            <ButtonLogin />
+        <div className= "mainfoto3">
+            <button className= "buttonlog2">LOGIN NOW</button>
         </div>        
         <div className="onemore">
             <h4>One more streaming app, may it will be the best</h4>
@@ -28,35 +29,34 @@ function Info () {
         </div>
         <div className="devices">
             <div className="tv">
-              <i className="fas fa-tv fa-4x"></i>
-                <p>Amazon Fire TV<br/>
-                    Android TV<br/>
-                    Apple TV <br/>
-                    Chromecast<br/>
-                    LG TVs<br/>
-                    Roku<br/>
-                    Samsung
-                </p>
+              <div className="TvIcon" style={{fontSize:'4.5em', color:'white'}}><FontAwesomeIcon icon={faTv}/></div>
+                <p>Amazon Fire TV</p>
+                <p>Android</p>
+                <p>Apple TV</p>
+                <p>Chromecast</p>
+                <p>LG TVs</p>
+                <p>Roku</p>
+                <p>Samsung</p>
             </div>
-            <div className="computer"><i className="fas fa-desktop fa-4x"></i>
-                <p>Chrome OS<br/>
-                    MacOS<br/>
-                    Windows PC <br/>
-                </p>
+            <div className="computer">
+                <div className="DesktopIcon" style={{fontSize:'4.5em', color:'white'}}><FontAwesomeIcon icon={faDesktop}/></div>
+                <p>Chrome OS</p>
+                <p>MacOS</p>
+                <p>Windows PC </p>
             </div>
-            <div className="mobile"><i className="fas fa-mobile fa-4x"></i>
-                <p>Amazon Fire Tablets<br/>
-                   Android Phones & iPad<br/>
-                   iPhone & iPad<br/>
-                </p>
+            <div className="mobile">
+                <div className="MobileIcon" style={{fontSize:'4.5em', color:'white',}}><FontAwesomeIcon icon={faMobile}/></div>
+                <p>Amazon Fire Tablets</p>
+                <p>Android Phones & iPad</p>
+                 <p>iPhone & iPad</p>
             </div>
-            <div className="consoles"><i className="fas fa-gamepad fa-4x"></i>
-                <p>PS4<br/>
-                   PS5<br/>
-                   Xbox One<br/>
-                   Xbox Series X <br/>
-                   Xbox Series S <br/> 
-                </p>
+            <div className="consoles">
+                <div className="GamepadIcon" style={{fontSize:'4.5em', color:'white'}}><FontAwesomeIcon icon={faGamepad}/></div>
+                <p>PS4</p>
+                <p>PS5</p>
+                <p>Xbox One</p>
+                <p>Xbox Series X </p>
+                <p>Xbox Series S </p>
             </div>
         </div>
         <Footer />
