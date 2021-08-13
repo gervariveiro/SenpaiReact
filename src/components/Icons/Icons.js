@@ -12,6 +12,7 @@ function Icons () {
             <li><FontAwesomeIcon icon={faInfo}/><br/><br/>Info</li>
         </ul>
     )
+
     }
 
 export default Icons;
