@@ -6,14 +6,14 @@ import Footer from '../components/footer/footer';
 function Login () {
 
 return (
-    <div className= "container">
+    <div className= "containerLogin">
       <div className = "mainfoto">
         <Singupbutton />
       </div>
-      <div className="divForm">
+      <div className="divform">
         <form className="form">
-          <input type= "email" className= "forminput" value="Email"/>
-          <input type= "name" className= "forminput" value="Password"/>
+          <input type= "email" className= "forminput" placeholder="Email"/>
+          <input type= "name" className= "forminput" placeholder="Password"/>
         </form>
         <ButtonLogin />
       </div>

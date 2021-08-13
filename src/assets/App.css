@@ -7,13 +7,24 @@
     }
 
     
-    .container2{
+    .containerHome{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows:  0.5fr 1fr 0.1fr;
         grid-template-areas:"play"
                             "movies"
                             "footer";
+    }
+
+    .buttonSignup{
+        background-color: #3177FF;
+        color: white;
+        width: 84px;
+        height: 30px;
+        margin: 10px 10px 0 0;
+        border-radius: 5px;
+        font-weight: 400;
+        font-family: "Roboto" , sans-serif;
     }
 
     .play{
@@ -25,7 +36,7 @@
                             "player";
         grid-area: play;
         color: white;
-        background: linear-gradient(to bottom, rgba(4,7,19,0) 20%, rgba(4,7,19,1) 75%), url("./movie.png");
+        background: linear-gradient(to bottom, rgba(4,7,19,0) 20%, rgba(4,7,19,1) 75%), url('./movie.png');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -138,6 +149,7 @@
         font-family: "Roboto" , sans-serif;
         padding: 20px;
     }
+    
     .footer{
             grid-area: footer;
             display: flex;
@@ -153,69 +165,28 @@
             line-height: 14px;
     }
 
-@media (min-width: 640px) {
+/*-------------------------------LOGIN-----------------------------------------------------------------------------------------*/
 
-    .play{
-        background-position: initial;
-        background-size:100%;
-    }
-
-    .categories{
-        margin: 0 30% 0 30%; 
-    }
-
-    .player{
-        margin: 10% 30% 20% 30%;
-    }
-
-    }
-
-@media (min-width: 1024px) {
-
-.container{
-        grid-template-rows:  0.2fr 0.2fr 0.1fr;   
-    }
-
-.play{
-    background-position:center;
-    background-size:100% 110%;
+.containerLogin{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 2fr 1.9fr;
+    grid-template-areas: "mainfoto"
+                         "divform"
+                         "footer";
 }
-
-.categories{
-    padding-top: 15%;
-    margin: 0 35% 0 35%;
-}
-
-.player{
-    margin: 0% 40% 2% 40%;
-}
-
-}
-
-
-.container{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 2fr 2fr 1.9fr;
-        grid-template-areas: "mainfoto"
-                             "divform"
-                             "footer";
-    }
 
 .mainfoto{
     grid-area: mainfoto;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    background-image: url("./friki.jpg");
+    background: url('./friki.jpg');
     background-position:center;
     background-size: cover;
-
     }
 
-
-
-.buttonSignup{
+.signup{
     background-color: #3177FF;
     color: white;
     width: 84px;
@@ -226,7 +197,8 @@
     font-family: "Roboto" , sans-serif;
 }
 
-.divForm{
+.divform{
+    grid-area: divform;
     display: flex;
     flex-direction: column;
     background-color:#040713;
@@ -234,7 +206,7 @@
 }
 
 .forminput{
-    flex-grow: 5;
+    display: flex;
     justify-content: space-between;
     width: 90%;
     height: 45px;
@@ -250,43 +222,244 @@
     line-height: 100%;
 }
 
+
 .buttonlog{
-    align-self: center;
-    background-color: #3177FF;
-    color: white;
-    width: 84px;
-    height: 30px;
-    margin: 10px 10px 0 0;
-    border-radius: 5px;
-    font-weight: 400;
-    font-family: "Roboto" , sans-serif;
+        align-self: center;
+        background-color: #3177FF;
+        color: white;
+        width: 195px;
+        height: 30px;
+        margin-top: 40px;
+        border-radius: 5px;
+        font-weight: 400;
+        font-family: "Roboto" , sans-serif;
 }
 
+/*----------------------------------REGITER----------------------------------------------------------------------------------
 
-@media (min-width: 768px) {
+.containerRegiter{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 2fr 0.5fr;
+    grid-template-areas:"photoyform1"
+                        "form2"
+                        "footer";
+}
+    
+    .photoyform1{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1.25fr 0.5fr;
+        grid-template-areas: "mainfoto2"
+                             "form1"
+                             "footer" ;
+
+    }
+
+    .mainfoto2{
+        display: flex;
+        justify-content: flex-end;
+        background: url('./friki.jpg');
+        background-position:center;
+        background-size: cover;
+    }
+
+    .login1{
+        display: flex;
+        background-color: #3177FF;
+        color: white;
+        text-align: center;
+        width: 84px;
+        height: 30px;
+        margin: 10px 10px 0 0;
+        padding-top: 5px;
+        padding-left: 20px;
+        border-radius: 5px;
+        font-weight: 400;
+        font-family: "Roboto";
+        font-size: 14px;
+        font-style: normal;
+    
+    }
+
+    .form1{
+        background-color:#040713;
+    }
+
+    .forminput{
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        height: 45px;
+        margin: 10px;
+        margin-left: 15px;
+        border-radius: 5px;
+        padding-left: 10px;
+        color: #3177FF;
+        font-family: "Roboto" , sans-serif;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .form2{
+        grid-area: form2;
+        display: flex;
+        flex-direction: column;
+        background-color: #040713;
+        color: white;
+    }
+    .choose{
+        background-color: #040713;
+        text-align: center;
+        padding-top: 30px;
+        flex-direction: column;
+        font-family: "Roboto";
+        line-height: 21px;
+        font-size: 18px;
+    }
+
+    .choose p{
+        display: flex;
+        justify-content: center;
+        padding-right: 64px;
+        padding-left: 64px;
+        padding-top: 30px;
+        font-size: 11px;
+        font-weight: 400;
+    } 
+
+    .inputform2{
+        display: inline-block;
+        text-align: left;
+        padding-top: 15px;
+        padding-left: 30px;
+        line-height: 40px;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: "Roboto";
+
+    }
+
+    .divsignup-now{
+        display: flex;
+        justify-content: center;
+    }
+
+    .signup-now{
+        background-color: #3177FF;
+        color: white;
+        width: 195px;
+        height: 30px;
+        margin-top: 40px;
+        border-radius: 5px;
+        font-weight: 400;
+        font-size: 14px;
+        font-family: "Roboto" , sans-serif;
+    }
+
+    */
+
+    /*----------------------------------------------INFO----------------------------------------------------------------------------------------------------------*/
+
 
     .container{
-            height: 448px;
-            grid-template-columns: 0.9fr 1.1fr;
-            grid-template-rows: 1fr;
-            grid-template-areas: "divform mainfoto";                        
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 2fr 2fr 1fr;
+        grid-template-areas:"mainfoto"
+                            "onemore"
+                            "devices"
+                            "footer";
     }
-
-    .divform{
-        padding-top: 25%;
+    
+    
+    
+    
+    .onemore{
+        grid-area: onemore;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #040713;
+        color: white;
+        font-family: "Roboto";
     }
-
-    .login-now{
-        margin-bottom: 10%;
+    
+    h1{
+        font-size: 18px;
+        line-height: 21px;
+        font-weight: bold;
     }
+    
+    h3{
+        font-family: "Roboto";
+        font-size: 14px;
+        line-height: 16px;}
+    
+    h4{
+        font-family: Roboto;
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    h5{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 10px;
+        font-size: 12px;
+        text-align: center;
+    }
+    
+    p{
+        font-family: "Roboto";
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 16px;
+        text-align: center;
+        color: lightslategray;
+    }
+    
+    .signup-now{
+                align-self: center;
+                background-color: #3177FF;
+                color: white;
+                width: 195px;
+                height: 30px;
+                margin-top: 40px;
+                border-radius: 5px;
+                font-weight: 400;
+                font-family: "Roboto";
+        }
+    
+    .login{
+            align-self: flex-end;
+            background-color: #3177FF;
+            color: white;
+            width: 84px;
+            height: 30px;
+            margin: 10px 10px 0 0;
+            border-radius: 5px;
+            font-weight: 400;
+            font-family: "Roboto" , sans-serif;
+    }
+        
+    
+    .devices{
+        grid-area: devices;
+        display: flex;
+        justify-content: space-around;
+        background-color:#040713;
+        padding:5% 15% 0% 15%;
+        flex-wrap: wrap;
+    }
+    
+    i{
+      color:white;  
+    }
+    
+    .mobile i{
+        margin-left: 40px;
+    }
+    
 
-
-}
-
-@media (min-width: 1024px) {
-
-.container{
-    height: 972px;
-}
-
-}

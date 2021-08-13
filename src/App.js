@@ -5,6 +5,8 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Carousel from './components/Carousel.js';*/
 import Login from './pages/Login.js';
 import Home from './pages/Home.js';
+import Register from './pages/Register.js';
+import Info from './pages/Info.js';
 import './assets/App.css';
 
 function app() {
@@ -15,10 +17,16 @@ function app() {
         <Switch>
         <Route path="/Home">
             <Home />
-          </Route>
-          <Route path="/Login">
+        </Route>
+        <Route path="/Login">
             <Login />
-          </Route>
+        </Route>
+        <Route path="/Register">
+            <Register />
+        </Route>
+        <Route path="/Info">
+            <Info />
+        </Route>
         </Switch>
       </BrowserRouter>
     </div>
