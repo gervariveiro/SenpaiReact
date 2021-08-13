@@ -104,7 +104,9 @@
     .movies{
         display: flex;
         text-align: start;
-        flex-direction: column;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
         grid-area: movies;
         background-color: #040713;
         font-family: "Roboto";
@@ -115,6 +117,14 @@
         padding: 10px;
         padding-bottom: 30%;
         letter-spacing: 0.84px;
+    }
+
+    .carousel{
+        padding: 15%;
+        font-family: "Roboto";
+        font-style: normal;
+        font-size: 12px;
+
     }
 
     .mylist{
@@ -315,6 +325,10 @@
         width: 100%;
     }
 
+    .buttonlog2{
+        align-self: flex-start;
+    }
+
     .form1{
         background-color:#040713;
     }
@@ -371,6 +385,7 @@
         font-family: "Roboto" , sans-serif;
     }
     
+
 /*Para continuar con estilo
      @media (max-width: 768px) {
             .login2{

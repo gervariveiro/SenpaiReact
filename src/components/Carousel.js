@@ -1,6 +1,6 @@
-import Movie from "./Movie";
+import Movie from './Movie';
 
-const Carousel = ({ data, name }) => {
+function Carousel ({ data, name }) {
   return (
     <div>
       <h1>{name}</h1>
@@ -12,3 +12,4 @@ const Carousel = ({ data, name }) => {
 }
 
 export default Carousel;
+

@@ -1,7 +1,7 @@
 import React from 'react';
 import Footer from '../components/footer/footer';
 import SingNowbutton from '../components/buttons/signupnow';
-import ButtonLogin from '../components/buttons/buttonlogin';
+import ButtonLogin2 from '../components/buttons/buttonlogin2';
 
 
 function Register () {
@@ -11,7 +11,7 @@ function Register () {
     <div className="containerRegister">
       <div className="fotoyform1">
           <div className= "mainfoto2">
-        <ButtonLogin />
+        <ButtonLogin2 />
           </div>
           <div className="form1">
                   <form className="form">
