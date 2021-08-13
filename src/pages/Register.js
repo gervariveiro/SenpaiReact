@@ -11,6 +11,7 @@ function Register () {
     <div className="containerRegister">
       <div className="fotoyform1">
           <div className= "mainfoto2">
+        <ButtonLogin />
           </div>
           <div className="form1">
                   <form className="form">
