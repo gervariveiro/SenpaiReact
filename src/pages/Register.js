@@ -1,6 +1,6 @@
 import React from 'react';
 import Footer from '../components/footer/footer';
-import Singupbutton from '../components/buttons/buttonS';
+import SingNowbutton from '../components/buttons/signupnow';
 import ButtonLogin from '../components/buttons/buttonlogin';
 
 
@@ -14,13 +14,12 @@ function Register () {
           </div>
           <div className="form1">
                   <form className="form">
-                      <input type= "name" className= "forminput" value="Name"/>
-                      <input type= "country" className= "forminput" value="Country"/>
-                      <input type= "pwd" className= "forminput" value="Password"/>
-                      <input type= "confirm pwd" className= "forminput" value="Confirm Password"/>
+                      <input type= "name" className= "forminput" placeholder="Name"/>
+                      <input type= "country" className= "forminput" placeholder="Country"/>
+                      <input type= "pwd" className= "forminput" placeholder="Password"/>
+                      <input type= "confirm pwd" className= "forminput" placeholder="Confirm Password"/>
                   </form>
           </div>
-          <ButtonLogin />
       </div>
       <div className="form2">
           <div className= "choose">
@@ -35,7 +34,7 @@ function Register () {
               <input type="radio" name="art" id="art"/>
               <label for="latino">Art +</label> <br/>
           </div>
-          <Singupbutton />
+          <SingNowbutton />
       </div>
     <Footer />
 </div>
