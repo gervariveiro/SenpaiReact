@@ -2,6 +2,8 @@ import React from 'react';
 import Footer from '../components/footer/footer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faDesktop, faMobile, faGamepad, faTv} from '@fortawesome/free-solid-svg-icons';
+import ButtonLogin from '../components/buttons/buttonlogin2';
+import SingUpbutton from '../components/buttons/signup';
 
 function Info () {
 
@@ -9,7 +11,7 @@ function Info () {
 
   <div className="containerInfo">
         <div className= "mainfoto3">
-            <button className= "buttonlog2">LOGIN NOW</button>
+            <ButtonLogin />
         </div>        
         <div className="onemore">
             <h4>One more streaming app, may it will be the best</h4>
@@ -17,7 +19,7 @@ function Info () {
             <h5>*Price may vary depending on the currency or platform used for payment.<br/>
                 Third-party fees may apply.</h5>
             <div className="divsignup-now">
-                <input type="submit" className="signup-now" value="SIGN UP NOW"/>        
+                <SingUpbutton/>
             </div>  
             <h1>Watch the way you want</h1>
             <h4>Enjoy the big screen experience on your TV, or <br/>

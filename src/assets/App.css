@@ -304,7 +304,7 @@
         border-radius: 5px;
         font-weight: 400;
         font-family: "Roboto" , sans-serif;
-        text-decoration: none;
+        
 }
 
 @media (min-width: 768px) {
@@ -360,6 +360,7 @@
 
     .buttonlog2{
         align-self: flex-start;
+
     }
 
     .form1{
