@@ -1,6 +1,6 @@
 import React from 'react';
 import ButtonLogin from '../components/buttons/buttonlogin';
-import Singupbutton from '../components/buttons/buttonS';
+import SingUpbutton from '../components/buttons/signup';
 import Footer from '../components/footer/footer';
 
 function Login () {
@@ -8,7 +8,7 @@ function Login () {
 return (
     <div className= "containerLogin">
       <div className = "mainfoto">
-        <Singupbutton />
+        <SingUpbutton  />
       </div>
       <div className="divform">
         <form className="form">

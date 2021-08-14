@@ -1,9 +1,13 @@
-function Movie ({ data }) {
+import React from 'react';
+import { ImageUrl } from '../constants';
+
+
+function Movie ({data}) {
   
-  return (
-    <div className="movie">
-      <h3>{data.original_title}</h3>
-    </div>
+  return (  
+    <li className="movie" style={{ backgroundImage: `url(${ImageUrl}${data.poster_path})`}}>
+      <h3 className="movietitle"> {data.original_title}</h3>
+    </li>
   )
 }
 

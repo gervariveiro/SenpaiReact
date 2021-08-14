@@ -5,7 +5,6 @@ import Icons from '../components/Icons/Icons';
 import Carousel from '../components/Carousel';
 import { useEffect, useState } from 'react';
 import { getPopularMovies, getUpcomingMovies, getNowPlayingMovies} from '../api/Index.js';
-import { ImageUrl } from '../constants';
 
 
 
@@ -62,7 +61,7 @@ function Home () {
             <Icons />
           </div>
         <div className="movies">
-          <div style={{ backgroundImage: `url(${ImageUrl}${nowPlayingMovies[2]?.poster_path})` }}></div>
+          <div>
           <Carousel
           data={popularMovies}
           name="Peliculas Populares"
@@ -75,6 +74,7 @@ function Home () {
           data={nowPlayingMovies}
           name="Películas más vistas"
          />
+        </div>
         </div>
             <Footer />
       </div>

@@ -7,9 +7,9 @@ function Icons () {
 
     return (
         <ul className="player" style={{fontSize:'1.2em', color:'white'}}>
-            <li><FontAwesomeIcon icon={faPlus}/><br/><br/>Mylist</li>
-            <li><FontAwesomeIcon icon={faPlay}/><br/><br/>Play</li>
-            <li><FontAwesomeIcon icon={faInfo}/><br/><br/>Info</li>
+            <li><button><FontAwesomeIcon icon={faPlus} style={{fontSize:'2em'}}/></button><br/><br/>Mylist</li>
+            <li><button><FontAwesomeIcon icon={faPlay} style={{fontSize:'2em'}}/></button><br/><br/>Play</li>
+            <li><button><FontAwesomeIcon icon={faInfo} style={{fontSize:'2em'}}/></button><br/><br/>Info</li>
         </ul>
     )
 

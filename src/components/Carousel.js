@@ -4,9 +4,9 @@ function Carousel ({ data, name }) {
   return (
     <div>
       <h1>{name}</h1>
-      <div  className="carousel">
-        {data?.map((movie) => <Movie data={movie}/>)}
-      </div>
+      <ul  className="carousel">
+        {data?.slice(0,9).map((movie) => <Movie data={movie}/>)}
+      </ul>
     </div>
   )
 }
